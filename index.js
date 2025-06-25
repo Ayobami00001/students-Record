@@ -10,9 +10,9 @@ const port = 3001
 
 
 
-app.get("/",(req,res)=>{
-    res.send("hello world")
-})
+// app.get("/",(req,res)=>{
+//     res.send("hello world")
+// })
 
 let studentRecords=[
     {id:1, studentName:"paul",studentCourse:"web developer", studentLevel:"beginner"},
@@ -26,7 +26,7 @@ let studentRecords=[
     {id:9, studentName:"tom",studentCourse:"web developer", studentLevel:"advanced"},
     {id:10, studentName:"alice",studentCourse:"web developer", studentLevel:"beginner"},
 ]
-app.get("/students",(req,res)=>{
+app.get("/",(req,res)=>{
     res.send(studentRecords)
 });
 
